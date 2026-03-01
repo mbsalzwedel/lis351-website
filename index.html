@@ -3,200 +3,174 @@ STEP 1: Add the required HTML5 skeleton
 ========================================================= -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAMPUSINTERIORS</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMPUSINTERIORS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
-    <!-- =========================================================
-    STEP 2: Build the “top area” (site name + navigation) using simple HTML
-    ========================================================= -->
-  <header>
-      <h1>Campus Interiors</h1>
+<body>
 
-      <nav>
-        <ul>
-          <li><a href="#features">Design Tips</a></li>
-          <li><a href="#makeover">Living Room Guide</a></li>
-          <li><a href="#sustainable">Sustainable Decor</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Campus Interiors<span class="dot">.</span></h1>
+
+      <nav class="site-nav">
+        <a href="#features">Design Tips</a>
+        <a href="#makeover">Living Room Guide</a>
+        <a href="#sustainable">Sustainable Decor</a>
+        <a href="#contact">Contact Us</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
 
-    <!-- =========================================================
-    STEP 3: Hero section + “Get Started button” as a link
-    ========================================================= -->
   <main>
 
-      <section id="hero">
-        <img src="images/college-living-room.jpg" 
-             alt="Bright modern college house living room with cozy seating and natural light" 
-             width="100%">
-
-        <h2>Design Your College House Into a Home</h2>
-        <p>Affordable, stylish, and functional interior design ideas made for student living.</p>
-
-        <p>
-          <a href="#features">Get Started with Design Ideas</a>
-        </p>
-      </section>
-    
-
-    <!-- =========================================================
-    STEP 4: Features section (3 blocks) + featured content section
-    ========================================================= -->
-      <section id="features">
-        <h2>Why Choose Campus Interiors?</h2>
-
-        <article>
-  <!-- Budget Icon -->
-  <svg xmlns="http://www.w3.org/2000/svg"
-       fill="none"
-       viewBox="0 0 24 24"
-       stroke-width="1.5"
-       stroke="currentColor"
-       width="40"
-       height="40"
-       aria-hidden="true">
-    <path stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-  </svg>
-
-  <h3>Budget-Friendly Design</h3>
-  <p>
-    Learn how to decorate your college house without overspending.
-    We focus on thrifted finds, DIY upgrades, and smart investments
-    that last all four years.
-  </p>
-</article>
-
-        <article>
-  <!-- Small Space Solutions Icon -->
-  <svg xmlns="http://www.w3.org/2000/svg"
-       fill="none"
-       viewBox="0 0 24 24"
-       stroke-width="1.5"
-       stroke="currentColor"
-       width="40"
-       height="40"
-       aria-hidden="true">
-    <path stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0 1 12 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125-.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
-  </svg>
-
-  <h3>Small Space Solutions</h3>
-  <p>
-    Maximize shared bedrooms, compact kitchens, and narrow living rooms
-    with clever layouts and multifunctional furniture designed for student life.
-  </p>
-</article>
-
-        <article>
-  <!-- Roommate-Friendly Style Icon -->
-  <svg xmlns="http://www.w3.org/2000/svg"
-       fill="none"
-       viewBox="0 0 24 24"
-       stroke-width="1.5"
-       stroke="currentColor"
-       width="40"
-       height="40"
-       aria-hidden="true">
-    <path stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-  </svg>
-
-  <h3>Roommate-Friendly Style</h3>
-  <p>
-    Create cohesive spaces that reflect everyone’s personality while keeping 
-    shared areas organized, welcoming, and functional.
-  </p>
-</article>
-
-      </section>
-
-
-      <section id="makeover">
-        <h2>The Ultimate College Living Room Makeover</h2>
-
-        <img src="images/living-room-makeover.jpg" 
-             alt="Cozy student living room with layered rugs, plants, and warm lighting" 
-             width="400">
-
-        <p>
-          The living room is the heart of any college house. It is where roommates gather, 
-          friends visit, and memories are made. Our featured makeover guide walks you through 
-          choosing a cohesive color palette, arranging furniture for conversation, incorporating 
-          thrifted statement pieces, and adding lighting that makes the space feel warm and inviting.
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Design Your College House Into a Home</h1>
+        <p class="hero-subhead">
+          Affordable, stylish, and functional interior design ideas made for student living.
         </p>
 
-        <p>
-          With just a few intentional design choices, even a basic rental living room can feel 
-          personalized and elevated.
+        <a href="#features" class="btn btn-dark">
+          Get Started with Design Ideas
+        </a>
+      </div>
+    </section>
+
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <h2 class="section-title">Why Choose Campus Interiors?</h2>
+
+        <div class="features-grid">
+
+          <div class="feature">
+            <div class="icon">$</div>
+            <h3>Budget-Friendly Design</h3>
+            <p>
+              Learn how to decorate your college house without overspending.
+              We focus on thrifted finds, DIY upgrades, and smart investments
+              that last all four years.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">⌂</div>
+            <h3>Small Space Solutions</h3>
+            <p>
+              Maximize shared bedrooms, compact kitchens, and narrow living rooms
+              with clever layouts and multifunctional furniture.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">👥</div>
+            <h3>Roommate-Friendly Style</h3>
+            <p>
+              Create cohesive spaces that reflect everyone’s personality while keeping 
+              shared areas organized and functional.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MAKEOVER -->
+    <section id="makeover" class="featured">
+      <div class="container">
+        <h2 class="section-title">The Ultimate College Living Room Makeover</h2>
+<img src="images/college-living-room.jpg" 
+     alt="Bright modern college house living room with cozy seating and natural light" width="100%">        
+          
+
+        <p class="section-lede">
+          The living room is the heart of any college house. With just a few intentional 
+          design choices, even a basic rental can feel personalized and elevated.
         </p>
+      </div>
+    </section>
 
-        <h3>Key Makeover Steps</h3>
-        <ul>
-          <li>Choose a cohesive color palette</li>
-          <li>Layer rugs and textiles for warmth</li>
-          <li>Add plants for a natural touch</li>
-          <li>Use floor and table lamps for softer lighting</li>
-        </ul>
-      </section>
-    
 
-    <!-- =========================================================
-    STEP 5: Two secondary content blocks + CTA section 
-    ========================================================= -->
-    <section id="sustainable">
-        <h2>Sustainable Decorating</h2>
-        <p>
-          Incorporate secondhand furniture, upcycled décor, and eco-friendly materials 
-          to reduce waste while building a unique and meaningful space.
-        </p>
-      </section>
+    <!-- SECONDARY CARDS -->
+    <section class="secondary">
+      <div class="container secondary-grid">
 
-      <section id="study-spaces">
-        <h2>Study Spaces That Inspire</h2>
-        <p>
-          Design a productive study corner with proper lighting, comfortable seating, 
-          and minimal distractions to support academic success and focus.
-        </p>
-      </section>
+        <div class="card">
+          <div class="card-text">
+            <h3>Sustainable Decorating</h3>
+            <p>
+              Incorporate secondhand furniture, upcycled décor, and eco-friendly materials 
+              to reduce waste while building a meaningful space.
+            </p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+          <div class="card-image img-a"></div>
+        </div>
 
-      <section id="cta">
+        <div class="card">
+          <div class="card-text">
+            <h3>Study Spaces That Inspire</h3>
+            <p>
+              Design a productive study corner with proper lighting and minimal distractions.
+            </p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+          <div class="card-image img-b"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
         <h2>Heard Enough?</h2>
         <p>Start designing your dream college house today.</p>
-        <p>
-          <a href="#contact">Explore Design Tips and Get Inspired</a>
-        </p>
-      </section>
 
-    </main>
-    
+        <a href="#contact" class="btn btn-dark">
+          Explore Design Tips and Get Inspired
+        </a>
+      </div>
+    </section>
 
-    <!-- =========================================================
-    STEP 6: Footer 
-    ========================================================= -->
-    <footer id="contact">
-      <p>© 2026 Campus Interiors</p>
+  </main>
 
-      <nav>
-        <ul>
-          <li><a href="#hero">Back to Top</a></li>
-          <li><a href="#features">Design Resources</a></li>
-          <li><a href="https://unsplash.com" target="_blank">Image Credits</a></li>
-        </ul>
-      </nav>
-    </footer>
 
-  </body>
+  <!-- FOOTER -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-left">
+        <p>© 2026 Campus Interiors</p>
+        <a href="#hero">Back to Top</a>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#features">Design Resources</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Credits</h4>
+          <a href="https://unsplash.com" target="_blank">Image Credits</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
 </html>
-
   
